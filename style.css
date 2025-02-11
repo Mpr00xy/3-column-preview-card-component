@@ -26,8 +26,6 @@ body main section  {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     border-radius: 0.8rem;
     margin-inline: min(2rem, 30vw);
-    overflow: hidden;
-    margin-block: 1rem;
 }
 body main section article{
     display: grid;
