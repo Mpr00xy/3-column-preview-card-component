@@ -16,24 +16,21 @@ body{
     background-color: var(--Very-light-gray-background-headings-buttons);
 }
 body main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98.2vh;
 }
 body main section  {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill,2fr);
     border-radius: 0.8rem;
-    margin-inline: min(2rem, 30vw);
 }
 body main section article{
     display: grid;
     gap: 20px;
     padding: 50px;
     column-gap: 20px;
-    width: 14rem;
-    height: 26rem;
 }
 
 body main section  article h1{
