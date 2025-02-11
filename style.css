@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+    --fs: 15px;
+    --fw-Big700:700;
+    --fw-Lexend: 400;
+}
+body{
+    font-family: "Big Shoulders Display", serif;
+    font-family: "Lexend Deca", serif;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+}
+body main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+body main section  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+body main section article{
+    display: grid;
+    gap: 20px;
+    padding: 50px;
+    column-gap: 20px;
+    width: 14rem;
+    height: 26rem;
+}
+
+body main section  article h1{
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-size: 50px;
+    position: relative;
+    bottom: 30px;
+    font-family: "Big Shoulders Display", serif;
+    text-transform: uppercase;
+    font-weight: var(--fw-Big700);
+}
+body main section  article p{
+    color: var(--Transparent-white-paragraphs);
+    font-size: var(--fs);
+    font-family: "Lexend Deca", serif;
+    position: relative;
+    bottom: 100px;
+    width: 200px;
+    line-height: 1.5rem;
+}
+body main section article button{
+    border: none;
+    border-radius: 50px;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    position: relative;
+    bottom: 35px;
+    font-weight: var(--fw-Big700);
+}
+body main section article button:hover{
+    border: 2px solid var(--Transparent-white-paragraphs);
+    color: var(--Transparent-white-paragraphs);
+}
+body main section  .first-component{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0px 0px 10px;
+}
+body main section  .first-component button{
+    color: var(--Bright-orange);
+}
+body main section  .first-component button:hover{
+    background-color: var(--Bright-orange);
+    
+}
+
+body main section  .secound-component{
+    background-color: var(--Dark-cyan);
+}
+body main section  .secound-component button{
+    color: var(--Dark-cyan);
+}
+body main section  .secound-component button:hover{
+    background-color: var(--Dark-cyan);
+    
+}
+body main section  .third-component{
+    background-color: var(--Very-dark-cyan);
+}
+body main section  .third-component button{
+    color: var(--Very-dark-cyan);
+}
+body main section  .third-component button:hover{
+    background-color: var(--Very-dark-cyan);
+}
+body main section  .third-component{
+    color: var(--Very-dark-cyan);
+    border-radius: 0px 10px 10px 0px;
+
+}
+@media only screen and (max-width: 1000px) {
+    body main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body main section {
+      grid-template-columns: auto;
+      height: 85vh;
+    }
+    body main section  .first-component{
+        border-radius: 10px 10px 0px 0px;
+    }
+    body main section  .third-component{
+        border-radius: 0px 0px 10px 10px;
+    }
+  }
