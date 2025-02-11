@@ -23,7 +23,11 @@ body main{
 }
 body main section  {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-radius: 0.8rem;
+    margin-inline: min(2rem, 30vw);
+    overflow: hidden;
+    margin-block: 1rem;
 }
 body main section article{
     display: grid;
@@ -102,20 +106,3 @@ body main section  .third-component{
     border-radius: 0px 10px 10px 0px;
 
 }
-@media only screen and (max-width: 1000px) {
-    body main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    body main section {
-      grid-template-columns: auto;
-      height: 85vh;
-    }
-    body main section  .first-component{
-        border-radius: 10px 10px 0px 0px;
-    }
-    body main section  .third-component{
-        border-radius: 0px 0px 10px 10px;
-    }
-  }
